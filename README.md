@@ -5,26 +5,22 @@ This is a Lost and Found mobile application developed using Kotlin in Android St
 
 ---
 
+# LostFoundApp - SIT708 Task 9.1P
+
+This Android application is a Lost and Found mobile app developed for SIT708 Task 9.1P.
+
 ## Features
+- Add lost item reports
+- Add found item reports
+- Store item details using SQLite
+- Store location name, latitude, and longitude
+- Select location manually using Google Places
+- Get current location
+- View all lost and found items
+- Display items on Google Maps
+- Radius-based search to show nearby items
+- Different marker colours for lost and found items
 
-- Add lost/found items with:
-  - Title
-  - Description
-  - Category
-  - Image upload (from gallery)
-  - Timestamp
-
-- View all items in a list
-
-- Filter items by category using a dropdown (Spinner)
-
-- Delete items using long press
-
-- Input validation using Toast messages
-
-- Navigation between screens using buttons
-
----
 
 ## Technologies Used
 
@@ -45,8 +41,17 @@ This is a Lost and Found mobile application developed using Kotlin in Android St
 - `Item.kt` → Data model  
 
 ---
+- SQLite
+- Google Maps SDK
+- Google Places API
+- Fused Location Provider
 
 ## How to Run
+1. Open the project in Android Studio.
+2. Add a valid Google Maps API key in `strings.xml`.
+3. Enable Maps SDK for Android and Places API in Google Cloud Console.
+4. Sync Gradle.
+5. Run the app on an emulator or Android device.
 
 1. Clone the repository
 2. Open in Android Studio
@@ -63,8 +68,7 @@ This is a Lost and Found mobile application developed using Kotlin in Android St
 - Search functionality  
 - Improved UI using RecyclerView  
 
----
 
-## Author
-
-Anay Jayakumar
+## Student Details
+Name: Anay Jayakumar  
+Student ID: 224726304
