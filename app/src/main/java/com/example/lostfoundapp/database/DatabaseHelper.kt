@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import com.example.lostfoundapp.model.Item
 
 class DatabaseHelper(context: Context) :
-    SQLiteOpenHelper(context, "LostFoundDB", null, 1) {
+    SQLiteOpenHelper(context, "LostFoundDB", null, 2){
 
     override fun onCreate(db: SQLiteDatabase) {
         val createTable = """
@@ -18,7 +18,10 @@ class DatabaseHelper(context: Context) :
                 category TEXT,
                 image_uri TEXT,
                 date_time TEXT,
-                type TEXT
+                type TEXT,
+                location TEXT,
+                latitude REAL,
+                longitude REAL
             )
         """
         db.execSQL(createTable)
@@ -38,6 +41,9 @@ class DatabaseHelper(context: Context) :
             put("image_uri", item.imageUri)
             put("date_time", item.dateTime)
             put("type", item.type)
+            put("location", item.location)
+            put("latitude", item.latitude)
+            put("longitude", item.longitude)
         }
         db.insert("items", null, values)
     }
@@ -56,7 +62,10 @@ class DatabaseHelper(context: Context) :
                     category = cursor.getString(3),
                     imageUri = cursor.getString(4),
                     dateTime = cursor.getString(5),
-                    type = cursor.getString(6)
+                    type = cursor.getString(6),
+                    location = cursor.getString(7),
+                    latitude = cursor.getDouble(8),
+                    longitude = cursor.getDouble(9)
                 )
                 list.add(item)
             } while (cursor.moveToNext())

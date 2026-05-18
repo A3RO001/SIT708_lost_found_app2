@@ -14,4 +14,11 @@
     <string name="lost">Lost</string>
     <string name="found">Found</string>
     <string name="back_to_home">Back to Home</string>
+    <string name="google_maps_key">AIzaSyDL4c-XgrRHMKwCzpiO4q2PIts-4WXR5zs</string>
+    <string name="current_location_display">Current Location (%1$.4f, %2$.4f)</string>
+    <string name="search">Search</string>
+    <string name="enter_radius">Enter radius (km)</string>
+    <string name="nearby_items">Nearby Items</string>
+    <string name="location_hint">Enter location or search</string>
+    <string name="radius_hint">Radius (km)</string>
 </resources>

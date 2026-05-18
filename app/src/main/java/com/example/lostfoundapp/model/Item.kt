@@ -7,5 +7,8 @@ data class Item(
     val category: String,
     val imageUri: String,
     val dateTime: String,
-    val type: String
+    val type: String,
+    val location: String = "",
+    val latitude: Double = 0.0,
+    val longitude: Double = 0.0
 )

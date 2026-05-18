@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.lostfoundapp.activities.AddItemActivity
 import com.example.lostfoundapp.activities.ItemListActivity
+import com.example.lostfoundapp.activities.MapActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,7 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         val btnAdd = findViewById<Button>(R.id.btnAddItem)
         val btnView = findViewById<Button>(R.id.btnViewItems)
+        val btnShowMap = findViewById<Button>(R.id.btnShowMap)
 
+        btnShowMap.setOnClickListener {
+            startActivity(Intent(this, MapActivity::class.java))
+        }
         btnAdd.setOnClickListener {
             startActivity(Intent(this, AddItemActivity::class.java))
         }
