@@ -100,4 +100,4 @@ Users can add lost or found item reports with:
 ## Student Details
 - Name: Anay Jayakumar
 - Student ID: 224726304
-- Unit: SIT708 Mobile Systems Development
+- Unit: SIT708 Mobile Application Development
