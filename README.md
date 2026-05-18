@@ -1,4 +1,4 @@
-# SIT708_Lost_Found_App1
+# SIT708_Lost_Found_App2
 
 ## Overview
 This is a Lost and Found mobile application developed using Kotlin in Android Studio for SIT708 Task 9.1P. The app allows users to report lost or found items, upload images, store item details locally using SQLite, select locations using Google Places, and display items on Google Maps with radius-based search functionality.
